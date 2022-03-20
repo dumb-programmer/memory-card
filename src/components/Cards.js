@@ -1,4 +1,6 @@
 import lodash from "lodash/lodash";
+import Card from "./Card";
+import "../styles/Cards.css";
 
 const Cards = (props) => {
   const {
@@ -12,17 +14,21 @@ const Cards = (props) => {
     setHighScore,
     setWin,
   } = props;
+
   const onCardClick = (e) => {
-    const index = +e.target.getAttribute("data-index");
+    const index = +e.target.parentNode.getAttribute("data-index");
+    console.log(index);
     let present = false;
     for (let i = 0; i < selected.length; i++) {
-      if (selected[i] === index) {
+      console.log(selected);
+      if (selected[i].number === index) {
         present = true;
+        console.log(`Present`);
         break;
       }
     }
     if (!present) {
-      setSelected((prevState) => [...prevState, index]);
+      setSelected((prevState) => [...prevState, items[index - 1]]);
       setScore(score + 1);
       if (score === items.length - 1) {
         setWin(true);
@@ -39,10 +45,14 @@ const Cards = (props) => {
 
   return (
     <div className="card-container">
-      {items.map((number, i) => (
-        <div className="card" key={i} data-index={number} onClick={onCardClick}>
-          {number}
-        </div>
+      {items.map((item) => (
+        <Card
+          number={item.number}
+          name={item.name}
+          path={item.path}
+          key={item.id}
+          onCardClick={onCardClick}
+        />
       ))}
     </div>
   );
