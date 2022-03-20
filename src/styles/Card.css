@@ -1,0 +1,35 @@
+.card {
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 30px;
+    cursor: pointer;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.33);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.33);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.33);
+    background-color: #B8FFF9;
+}
+
+@keyframes popup {
+    to {
+        transform: scale(1.1);
+    }
+}
+
+.card:hover {
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.59);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.59);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.59);
+    animation-name: popup;
+    animation-duration: 0.2s;
+}
+
+.card-img {
+    height: 200px;
+    width: 200px;
+}
+
+.card>p{
+    margin: 0;
+    text-align: center;
+}
