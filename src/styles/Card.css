@@ -9,19 +9,11 @@
     background-color: #B8FFF9;
 }
 
-@keyframes popup {
-    to {
-        transform: scale(1.1);
-    }
-}
-
 .card:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.59);
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.59);
     -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.59);
-    animation-name: popup;
-    animation-duration: 0.5;
 }
 
 .card-img {

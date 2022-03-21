@@ -1,6 +1,6 @@
 import lodash from "lodash/lodash";
 import Card from "./Card";
-import "../styles/Cards.css";
+import "../styles/CardsContainer.css";
 
 const CardsContainer = (props) => {
   const {
