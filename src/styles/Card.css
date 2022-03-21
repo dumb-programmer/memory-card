@@ -1,6 +1,5 @@
 .card {
     margin: 10px;
-    border: 2px solid black;
     border-radius: 5px;
     font-size: 30px;
     cursor: pointer;
@@ -28,6 +27,8 @@
 .card-img {
     height: 200px;
     width: 200px;
+    padding: 10px;
+    border-radius: 20px;
 }
 
 .card>p {
