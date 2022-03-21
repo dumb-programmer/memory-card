@@ -2,12 +2,13 @@ import lodash from "lodash/lodash";
 import Card from "./Card";
 import "../styles/Cards.css";
 
-const Cards = (props) => {
+const CardsContainer = (props) => {
   const {
     items,
     setItems,
-    selected,
-    setSelected,
+    unchangedItems,
+    selectedItems,
+    setSelectedItems,
     score,
     setScore,
     highScore,
@@ -17,18 +18,18 @@ const Cards = (props) => {
 
   const onCardClick = (e) => {
     const index = +e.target.parentNode.getAttribute("data-index");
-    console.log(index);
     let present = false;
-    for (let i = 0; i < selected.length; i++) {
-      console.log(selected);
-      if (selected[i].number === index) {
+    for (let i = 0; i < selectedItems.length; i++) {
+      if (selectedItems[i].number === index) {
         present = true;
-        console.log(`Present`);
         break;
       }
     }
     if (!present) {
-      setSelected((prevState) => [...prevState, items[index - 1]]);
+      setSelectedItems((prevState) => [
+        ...prevState,
+        unchangedItems[index - 1],
+      ]);
       setScore(score + 1);
       if (score === items.length - 1) {
         setWin(true);
@@ -37,7 +38,7 @@ const Cards = (props) => {
       if (score >= highScore) {
         setHighScore(score);
       }
-      setSelected([]);
+      setSelectedItems([]);
       setScore(0);
     }
     setItems(lodash.shuffle(items));
@@ -58,4 +59,4 @@ const Cards = (props) => {
   );
 };
 
-export default Cards;
+export default CardsContainer;
