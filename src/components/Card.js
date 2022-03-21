@@ -1,7 +1,6 @@
 import "../styles/Card.css";
 
-const Card = (props) => {
-  const { number, name, path, onCardClick } = props;
+const Card = ({ number, name, path, onCardClick }) => {
   return (
     <div className="card" data-index={number} onClick={onCardClick}>
       <img src={path} alt={name} className="card-img" />
