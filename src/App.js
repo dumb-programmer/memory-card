@@ -7,6 +7,7 @@ import cat2 from "./images/cat2.jpeg";
 import cat3 from "./images/cat3.jpeg";
 import cat4 from "./images/cat4.jpeg";
 import cat5 from "./images/cat5.jpeg";
+import ScoreBoard from "./components/ScoreBoard";
 
 const App = () => {
   const unchangedItems = [
@@ -25,9 +26,7 @@ const App = () => {
   if (!win) {
     return (
       <div className="App">
-        <div className="scoreboard">
-          Score : {score} High Score : {highScore}
-        </div>
+        <ScoreBoard score={score} highScore={highScore} />
         <CardsContainer
           items={items}
           setItems={setItems}
