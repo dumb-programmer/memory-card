@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/memory-card/static/css/main.0ccca4cb.css",
+    "main.js": "/memory-card/static/js/main.8c3cf6d5.js",
+    "static/media/Tigress.jpeg": "/memory-card/static/media/Tigress.48ec6b8578dca4c60e35.jpeg",
+    "static/media/MrPing.jpeg": "/memory-card/static/media/MrPing.7fe740e960715c22e109.jpeg",
+    "static/media/Lord_Shen.jpeg": "/memory-card/static/media/Lord_Shen.14580dedb595377cd838.jpeg",
+    "static/media/Kai.jpeg": "/memory-card/static/media/Kai.aa8132758270dbdc33d0.jpeg",
+    "static/media/Oogway.jpeg": "/memory-card/static/media/Oogway.c78e718255e6e28da907.jpeg",
+    "static/media/Monkey.jpeg": "/memory-card/static/media/Monkey.bc18c647e24f68201525.jpeg",
+    "static/media/Shifu.jpeg": "/memory-card/static/media/Shifu.ee8116b6b0e4da77e9ed.jpeg",
+    "static/media/Po.jpeg": "/memory-card/static/media/Po.0866fb8caf618e8e89eb.jpeg",
+    "static/media/Tai_Lung.jpeg": "/memory-card/static/media/Tai_Lung.d13283b5c1dd40920996.jpeg",
+    "static/media/KungFuPandaRegular-xYjV.ttf": "/memory-card/static/media/KungFuPandaRegular-xYjV.fd3df450d4a60827705b.ttf",
+    "static/media/Mantis.jpeg": "/memory-card/static/media/Mantis.eca696956b0b094334ab.jpeg",
+    "index.html": "/memory-card/index.html",
+    "main.0ccca4cb.css.map": "/memory-card/static/css/main.0ccca4cb.css.map",
+    "main.8c3cf6d5.js.map": "/memory-card/static/js/main.8c3cf6d5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0ccca4cb.css",
+    "static/js/main.8c3cf6d5.js"
+  ]
+}
