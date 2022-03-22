@@ -1,7 +1,7 @@
 import "./styles/App.css";
 import { useState } from "react";
-import CardsContainer from "./components/CardsContainer";
 import uniqid from "uniqid";
+import CardsContainer from "./components/CardsContainer";
 import ScoreBoard from "./components/ScoreBoard";
 import Po from "./assets/images/Po.jpeg";
 import MrPing from "./assets/images/MrPing.jpeg";
