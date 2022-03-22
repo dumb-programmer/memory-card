@@ -3,6 +3,7 @@ import { useState } from "react";
 import uniqid from "uniqid";
 import CardsContainer from "./components/CardsContainer";
 import ScoreBoard from "./components/ScoreBoard";
+import WinnerScreen from "./components/WinnerScreen";
 import Po from "./assets/images/Po.jpeg";
 import MrPing from "./assets/images/MrPing.jpeg";
 import Shifu from "./assets/images/Shifu.jpeg";
@@ -54,7 +55,7 @@ const App = () => {
   } else {
     return (
       <div className="App">
-        <h1>You Won!</h1>
+        <WinnerScreen />
       </div>
     );
   }
