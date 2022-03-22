@@ -6,7 +6,7 @@
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.33);
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.33);
     -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.33);
-    background-color: #B8FFF9;
+    background-color: #DBE2EF;
 }
 
 .card:hover {
@@ -26,4 +26,5 @@
 .card>p {
     margin: 0;
     text-align: center;
+    padding-bottom: 5px;
 }
